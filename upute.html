@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MojUred | Upute</title>
+
+  <meta property="og:title" content="MojUred">
+  <meta property="og:site_name" content="MojUred">
+  <meta property="og:description" content="MojUred je on-line aplikacija za izradu ponuda i računa. Idealna aplikacija za male i
+    srednje poduzetnike, obrtnike te udruge i neprofitne organizacije.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="hr">
+  <meta property="og:url" content="https://mojured.eu">
+  <meta property="og:image" content="https://mojured.eu/assets/images/og-maliured.jpg">
+  <meta name="description" content="MojUred je on-line aplikacija za izradu ponuda i računa. Idealna aplikacija za male i
+    srednje poduzetnike, obrtnike te udruge i neprofitne organizacije">
+  <meta name="keywords" content="mojured, ured, ponuda, račun, ponavljajući račun, otpremnica, putni nalog, uplatnica,
+    isplatnica, blagajnički izvještaj, fiskalizacija, online računo">
+  <meta name="author" content="BrokenByte obrt za informatičke usluge, info@brokenbyte.agency">
+  <!--<meta name="Publisher" content="https://plus.google.com/107075430277881701825">-->
+
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:700|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-select/bootstrap-select.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link 
+</head>
+<body data-title="upute">
+<section id="navigation">
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top navbar-main">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-wrapper">
+          <img id="logo-white" src="assets/images/logo-white.svg" alt="">
+          <img id="logo-dark" src="assets/images/logo-dark.svg" alt="">
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Početna<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="upute.html">Upute</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="kontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item" id="prijava">
+            <a class="nav-link btn btn-white text-primary" href="https://app.maliured.com"><h6 class="m-0">PRIJAVA</h6></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+<section id="upute-intro">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-lg-12 col-xl-6 mt-4 upute-intro-wrapper">
+        <h3 class="text-white mb-5">- UPUTE</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="upute-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-3 mb-0">
+        <ul class="nav flex-column nav-pills upute-navigation p-2" id="pills-upute" role="tablist" aria-orientation="vertical">
+          <li class="nav-item">
+            <a href="upute.html#pills-company" class="nav-link active" id="pills-company-tab" data-toggle="pill" role="tab"
+               aria-controls="pills-company" aria-selected="true"><h5>1. PODACI O TVRTKI</h5></a>
+          </li>
+          <li class="nav-item">
+            <a href="upute.html#pills-clients" class="nav-link" id="pills-clients-tab" data-toggle="pill" role="tab"
+               aria-controls="pills-clients" aria-selected="false"><h5>2. KLIJENTI</h5></a>
+          </li>
+          <li class="nav-item">
+            <a href="upute.html#pills-products" class="nav-link" id="pills-products-tab" data-toggle="pill" role="tab"
+               aria-controls="pills-products" aria-selected="false"><h5>3. PROIZVODI / USLUGE</h5></a>
+          </li>
+          <li class="nav-item">
+            <a href="upute.html#pills-documents" class="nav-link" id="pills-documents-tab" data-toggle="pill" role="tab"
+               aria-controls="pills-documents" aria-selected="false"><h5>4. DOKUMENTI</h5></a>
+          </li>
+          <li class="nav-item">
+            <a href="upute.html#pills-register-report" class="nav-link" id="pills-register-report-tab" data-toggle="pill" role="tab"
+               aria-controls="register-report" aria-selected="false"><h5>5. BLAGAJNIČKI IZVJEŠTAJ</h5></a>
+          </li>
+          <li class="nav-item">
+            <a href="upute.html#pills-travel-warrant" class="nav-link" id="pills-travel-warrant-tab" data-toggle="pill" role="tab"
+               aria-controls="travel-warrant" aria-selected="false"><h5>6. PUTNI NALOZI</h5></a>
+          </li>
+          <li class="nav-item">
+            <a href="upute.html#pills-settings" class="nav-link" id="pills-settings-tab" data-toggle="pill" role="tab"
+               aria-controls="settings" aria-selected="false"><h5>7. POSTAVKE</h5></a>
+          </li>
+          <li class="nav-item">
+            <a href="upute.html#pills-fiskalizacija" class="nav-link" id="pills-fiskalizacija-tab" data-toggle="pill" role="tab"
+               aria-controls="fiskalizacija" aria-selected="false"><h5>8. FISKALIZACIJA</h5></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-8 col-lg-9 px-3 py-0 upute-content">
+        <div class="select-wrapper">
+          <select class="selectpicker" data-style="btn-primary" id="uputeSelect" title="ODABERITE">
+            <option class="select-option" value="0">1. PODACI O TVRTKI</option>
+            <option class="select-option" value="1">2. KLIJENTI</option>
+            <option class="select-option" value="2">3. PROIZVODI / USLUGE</option>
+            <option class="select-option" value="3">4. DOKUMENTI</option>
+            <option class="select-option" value="4">5. BLAGAJNIČKI IZVJEŠTAJ</option>
+            <option class="select-option" value="5">6. PUTNI NALOZI</option>
+            <option class="select-option" value="6">7. POSTAVKE</option>
+            <option class="select-option" value="7">8. FISKALIZACIJA</option>
+          </select>
+        </div>
+        <div class="tab-content py-5 py-md-0" id="pills-uputeContent">
+          <div class="tab tab-pane fade show active" id="pills-company" role="tabpanel" aria-labelledby="pills-company-tab">
+            <h5 class="mb-4">1. PODACI O TVRTKI</h5>
+            <div class="upute-inner">
+              <p class="mb-4 mb-md-3">Da bi koristili MaliUred, potrebno je popuniti podatke za vašu tvtku.</p>
+              <p class="mb-4 mb-md-3">Objašnjenje specifičnih podataka za tvrtku:</p>
+              <ul>
+                <li>Korisnik u sustavu PDV-a – ako je odabrano „Ne“, na ručunima se ispisuje napomena da korisnik nije u
+                  sustavu PDV-a
+                </li>
+                <li>Oznaka sljednosti – određuje način numeriranja ponuda i računa. Ako je odabrano „Na nivou poslovnog prostora“,
+                  svaka poslovnica će imati svoju numeraciju, neovisno o naplatnom uređaju (npr. 1/<b>1</b>/1, 1/<b>1</b>/2).
+                  Ako je odabrano „Na nivou naplatnog uređaja“, svaki naplatni uređaj će imati svoju numeraciju, neovisno o
+                  poslovnici (1/1/<b>1</b>, 1/2/<b>1</b>).
+                </li>
+                <li>Podnožje dokumenata – tekst koji se ispisuje na ponudama, računima i otpremnicama u podnožju. Sadrži podatke o
+                  firmi kao što su naziv, OIB, adresa, telefon, broj žiro računa, temeljni kapital itd.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab tab-pane fade" id="pills-clients" role="tabpanel" aria-labelledby="pills-clients-tab">
+            <h5 class="mb-4">2. KLIJENTI</h5>
+            <p class="mb-4 mb-md-3">
+              Baza klijenata vam omogućuje brže i jednostavnije dodavanje klijenata na sve dokumente. Listu klijenata možete
+              dobiti klikom na „Klijenti“ u izborniku. Klijenti su grupirani u dvije skupine: privatni klijenti i tvrtke.
+            </p>
+            <p class="mb-4 mb-md-3">Podaci za unos klijenta:</p>
+            <ul>
+              <li>Tip klijenta – klijent može biti fizička („Privatni“) i pravna osoba („Tvrtka“)</li>
+              <li>Strani klijent – ako je klijent označen kao strani, umjesto OIB-a se upisuje porezni broj, a na dokumentima se
+                ispisuje napomena za neplaćanje PDV-a
+              </li>
+              <li>Naziv – naziv klijenta</li>
+              <li>OIB / Porezni broj – OIB ili porezni broj klijenta</li>
+              <li>Adresa – adresa klijenta</li>
+              <li>Grad – grad klijenta</li>
+              <li>Država – država klijenta</li>
+              <li>Poštanski broj – ako je odabrana „Hrvatska“, poštanski broj se odabire iz izbornika. Ako je odabrana neka
+                druga država, potrebno je upisati poštanski broj klijenta.
+              </li>
+              <li>Email – email klijenta</li>
+              <li>Telefon – telefon klijenta</li>
+            </ul>
+          </div>
+          <div class="tab tab-pane fade" id="pills-products" role="tabpanel" aria-labelledby="pills-products-tab">
+            <h5 class="mb-4">3. PROIZVODI / USLUGE</h5>
+            <p class="mb-4 mb-md-3">
+              Baza proizvoda vam omogućuje brže i jednostavnije dodavanje proizvoda na sve dokumente. Listu proizvoda možete
+              dobiti klikom na „Proizvodi ➞ Proizvodi“ u izborniku. Svi proizvodi su grupirani pod kategorijama te ih se na taj
+              način može i pretraživati.
+            </p>
+            <p class="mb-4 mb-md-3">Podaci za unos proizvoda:</p>
+            <ul>
+              <li>Kategorija – kategorija kojoj pripada proizvod</li>
+              <li>Šifra – interna šifra proizvoda</li>
+              <li>Naziv – naziv proizvoda</li>
+              <li>Cijena – netto cijena proizvoda (bez PDV-a)</li>
+              <li>Porezna grupa – porezna grupa proizvoda</li>
+              <li>Jedinica mjere – jedinica mjere proizvoda</li>
+              <li>Tip – ako je odabrano „Roba“, prilikom kreiranja računa postoji mogućnost kreiranja otpremnice</li>
+              <li>Opis – opis proizvoda koji se ispisuje na dokumentima</li>
+            </ul>
+          </div>
+          <div class="tab tab-pane fade show" id="pills-documents" role="tabpanel" aria-labelledby="pills-documents-tab">
+            <h5 class="mb-4">4. DOKUMENTI</h5>
+            <div class="upute-inner">
+              <p class="mb-4 mb-md-3">Objašnjenje specifičnih elemenata dokumenata:</p>
+              <ul>
+                <li>Jezik – jezik može biti hrvatski i engleski. PDF dokument će uvijek biti na odabranom jeziku.</li>
+                <li>Valuta – odabrana valuta je HRK, ali se ona može mijenjati. Promjenom valute, automatski se ažuriraju stavke
+                  na dokumentu. Ako valuta nije HRK, postoji mogućnost generiranja dva PDF dokumenta. Jedan sa stranom valutom i
+                  jedan sa obje valute.
+                </li>
+                <li>Međunarodna napomena – međunarodna napomena se ispisuje na dokumentu ako je odabran engleski jezik.</li>
+                <li>Izmjena stavki – stavke dokumenta (proizvodi / usluge) možete mijenjati klikom na ikonicu u predzadnjem
+                  stupcu pojedine stavke. Pošto se proizvodi u bazu unose sa netto cijenom, dodaje im se PDV, ovisno o poreznoj
+                  grupi. Ako postavite „Brutto“ na „Da“, netto cijena postaje brutto cijena, tj. od netto cijene se oduzima
+                  iznos PDV-a.
+                </li>
+                <li>PDF – ponude i računi mogu imati dva tipa PDF dokumenta: „domaći“ i „strani“. To se događa u slučaju ako
+                  jezik dokumenta nije hrvatski ili ako valuta nije HRK. Kada to nije slučaj, generira se samo jedan PDF.
+                </li>
+              </ul>
+            </div>
+            <div class="upute-inner">
+              <h6 class="mb-3">4.1 Računi</h6>
+              <p class="mb-4 mb-md-3">U MalomUredu postoje dvije vrste računa: maloprodajni i veleprodajni. Maloprodajni računi
+                se fiskaliziraju, ne mogu se mijenjati, brisati i kopirati.
+              </p>
+              <p class="mb-4 mb-md-3">Objašnjenje specifičnih elemenata računa:</p>
+              <ul>
+                <li>Valuta unosa – primjenjuje se ako je „Valuta“ različita od HRK. Ako je „Valuta“ npr. EUR, a „Valuta unosa“
+                  HRK, radi se konverzija cijena prema trenutnom tečaju. Ako su i „Valuta“ i „Valuta unosa“ npr. EUR, u „domaćem“
+                  PDF-u se radi konverzija cijena iz EUR u HRK, a u „stranom“ ne.
+                </li>
+                <li>Model / poziv na broj – služe za jasnije objašnjenje osnove plaćanja. Model se sastoji od prefiksa „HR“ i
+                  dva broja (kontrolni brojevi). Ukoliko nemate sustav kontrolnih brojeva, stavite oznaku „HR99“. Poziv na broj
+                  se sastoji od brojeva i do dvije crtice (minusi), a može imati maksimalno 22 znamenke, uključujući i crtice.
+                </li>
+                <li>Predujam – ako radite račun za predujam, postavite „Predujam“ na „Da“. U tom slučaju će to biti naznačeno i
+                  PDF dokumentu.
+                </li>
+                <li>Status – maloprodajni računi imaju status „Plaćeni“, a veleprodajni mogu biti „Neplaćeni“, „Plaćeni“ i
+                  „Djelomično plaćeni“. Ukoliko je račun djelomično plaćen, potrebno je upisati uplaćeni iznos. Plaćeni računi se
+                  ne mogu editirati i brisati.
+                </li>
+              </ul>
+              <p class="mb4 mb-md-3">Listu računa možete dobiti klikom na „Dokumenti ➞ Računi“ u izborniku.</p>
+            </div>
+            <div class="upute-inner">
+              <h6 class="mb-3">4.2 Ugovori</h6>
+              <p class="mb-4 mb-md-3">Ugovori služe za kreiranje ponavljajućih računa. To su računi koji se automatski kreiraju i
+                šalju klijentima. Da bi kreirali ponavljajući račun, potrebno je kreirati ugovor sa podacima koje će sadržavati
+                ponavljajući račun.
+              </p>
+              <p class="mb-4 mb-md-3">Objašnjenje specifičnih elemenata ugovora:</p>
+              <ul>
+                <li>Broj ugovora – interni broj ugovora</li>
+                <li>Valuta – broj dana od datuma kreiranja računa</li>
+                <li>Trajanje ugovora – broj mjeseci trajanja ugovora</li>
+                <li>Aktivan – ako je odabrano „Da“, račun će se kreirati i slati klijentima</li>
+                <li>Vrsta naplate – ako je odabrano „Prošli mjesec“, račun se neće kreirati u mjesecu kreiranja ugovora, već
+                  sljedeći mjesec. Ako je odabrano „Tekući mjesec“, račun će se kreirati u mjesecu kreiranja računa pod uvjetom
+                  da je dan u mjesecu veći od „Dan kreiranja računa“.
+                </li>
+                <li>Dan kreiranja računa – da u mjesecu kada će račun biti kreiran</li>
+                <li>Kreiraj nakon završetka ugovora – ako je odabrano „Da“, računi će se kreirati i nakon što istekne ugovor. U
+                  tom slučaju se na PDF dokumentu više neće ispisivati broj trenutnog ugovora (npr. 7/12).
+                </li>
+              </ul>
+              <p class="mb4 mb-md-3">Listu ugovora možete dobiti klikom na „Dokumenti ➞ Ugovori“ u izborniku.</p>
+            </div>
+          </div>
+          <div class="tab tab-pane fade show" id="pills-register-report" role="tabpanel"
+               aria-labelledby="pills-register-report-tab">
+            <h5 class="mb-4">5. BLAGAJNIČKI IZVJEŠTAJ</h5>
+            <div class="upute-inner">
+              <p class="mb-4 mb-md-3">Blagajnički izvještaj predstavlja dnevnik blagajničkog poslovanja. Sastoji se od pregleda
+                gotovinskih uplata i isplata za određeno vremensko razdoblje. Za određeno vremensko razdoblje može postojati samo
+                jedan izvještaj. Ako prilikom brisanja postoje izvještaji nakon izvještaja koji se briše, obrisati će se svi
+                izvještaji nakon tog izvještaja. Listu izvještaja možete dobiti klikom na „Blagajnički izvještaj ➞ Izvještaji“
+                u izborniku.
+              </p>
+            </div>
+            <div class="upute-inner">
+              <h6 class="mb-3">5.1 Uplatnice</h6>
+              <p class="mb-4 mb-md-3">Uplatnice služe za evidenciju uplate gotovine. Kreiraju se automatski uz maloprodajni račun
+                (ako je način plaćanja „Gotovina“), a postoji mogućnost i ručnog kreiranja. Listu uplatnica možete dobiti klikom
+                na „Blagajnički izvještaj ➞ Uplatnice“ u izborniku.
+              </p>
+            </div>
+            <div class="upute-inner">
+              <h6 class="mb-3">5.2 Isplatnice</h6>
+              <p class="mb-4 mb-md-3">Isplaznice služe za evidenciju isplate gotovine. Kreiraju se automatski storniranjem
+                maloprodajnog računa (ako je način plaćanja „Gotovina“), a postoji mogućnost i ručnog kreiranja. Listu isplatnica
+                možete dobiti klikom na „Blagajnički izvještaj ➞ Isplatnice“ u izborniku.
+              </p>
+            </div>
+          </div>
+          <div class="tab tab-pane fade show" id="pills-travel-warrant" role="tabpanel" aria-labelledby="pills-travel-warrant-tab">
+            <h5 class="mb-4">6. PUTNI NALOZI</h5>
+            <div class="upute-inner">
+              <p class="mb-4 mb-md-3">Putni nalozi služe za evidenciju putovanja zaposlenika. Putni nalog se sastoji od samom
+                naloga, dnevnica, relacija i troškova. Za kreiranje naloga potrebno je unaprijed kreirati zaposlenike, vozila i
+                vrste dnevnica. Izračun kilometraže određene relacije se može dobiti klikom na ikonicu pored „Kilometara“ u
+                odjeljku „Relacije“. Listu putnih naloga možete dobiti klikom na „Putni nalozi ➞ Nalozi“ u izborniku.
+              </p>
+            </div>
+          </div>
+          <div class="tab tab-pane fade show" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab">
+            <h5 class="mb-4">7. POSTAVKE</h5>
+            <div class="upute-inner">
+              <h6 class="mb-3">7.1 Porezne grupe</h6>
+              <p class="mb-4 mb-md-3">Porezna grupa omogućuje lakšu manipulciju poreznih stopa. Ukoliko dođe do promjene porezne
+                stope u poreznoj grupi,dovoljno je samo dodati novu poreznu stopu i datum primjene iste. Listu poreznih grupa
+                možete dobiti klikom na „Postavke ➞ Porezne grupe“ u izborniku.
+              </p>
+            </div>
+            <div class="upute-inner">
+              <h6 class="mb-3">7.2 Korisnici / zaposlenici</h6>
+              <p class="mb-4 mb-md-3">Korisnici su osobe koje mogu korsistiti MaliUred, a zaposlenici su osobe koje mogu biti
+                podijeljeni na putne naloge. Listu korisnika možete dobiti klikom na „Postavke ➞ Korisnici“, a listu zaposlenika
+                na „Postavke ➞ Zaposlenici“ u izborniku.
+              </p>
+            </div>
+            <div class="upute-inner">
+              <h6 class="mb-3">7.3 Poslovnice</h6>
+              <p class="mb-4 mb-md-3">Ponude, računi i ugovori se moraju kreirati u nekoj poslovnici (poslovnom prostoru).
+                Oznaka poslovnice predstavlja drugi broj u broju nekog dokumenta (npr. 1/<b>1</b>/1). Listu poslovnica možete
+                dobiti klikom na „Postavke ➞ Poslovnice“.
+              </p>
+            </div>
+            <div class="upute-inner">
+              <h6 class="mb-3">7.4 Naplatni uređaji</h6>
+              <p class="mb-4 mb-md-3">Ponude, računi i ugovori se moraju kreirati na nekom naplatnom uređaju. Svaki naplatni
+                uređaj se nalazi u nekoj poslovnici. Oznaka naplatnog uređaja predstavlja treći broj u broju nekog dokumenta
+                (npr. 1/1/<b>1</b>). Listu naplatnih uređaja možete dobiti klikom na „Postavke ➞ Naplatni uređaji“.
+              </p>
+            </div>
+          </div>
+          <div class="tab tab-pane fade show" id="pills-fiskalizacija" role="tabpanel" aria-labelledby="pills-fiskalizacija-tab">
+            <h5 class="mb-4">8. FISKALIZACIJA</h5>
+            <div class="upute-inner">
+              <p class="mb-4 mb-md-3">Da bi fiskalizirali maloprodajne račune, potrebno je od FINA-e zatražiti fiskalni
+                certifikat i lozinku. Nakon toga se certifikat mora dodati u MaliUred i upisati lozinka za isti. Forma za unos
+                certifikata i lozinke možete dobiti klikom na „Postavke ➞ Fiskalizacija“. Svi maloprodajni računi se prilikom
+                kreiranja automatski fiskaliziraju. Ukoliko se račun nije fiskalizirao, postoji mogućnost i naknadne
+                fiskalizacije. Račun se može fiskalizirati klikom na ikonicu pored broja računa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-wrapper px-3">
+        <div class="footer-top">
+          <div class="col-sm-12 col-md-3 mb-4 mb-sm-0">
+            <div class="footer-inner">
+              <img class="img-fluid mb-4" src="assets/images/logo-red.svg" alt="">
+              <p><i class="fa fa-phone-square" aria-hidden="true"></i><a href="tel:=385994448488"> +385 99 444 99 49</a></p>
+              <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@mojured.eu"> info@mojured.eu</a></p>
+              <p>
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/MaliUred/" target="_blank"> Facebook</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 mb-4 mb-sm-0">
+            <div class="footer-inner">
+              <p><span>Sjedište:</span> Osijek, Ulica Svetog Roka 41</p>
+              <p><span>Sud:</span> Trgovački sud u Osijeku</p>
+              <p><span>MBS:</span> 030120979</p>
+              <p><span>OIB:</span> 46307988000</p>
+              <p><span>Bank SWIFT:</span> ZABAHR2X</p>
+              <p><span>Broj žiro računa:</span> HR0823600001102275440</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 mb-4 mb-sm-0">
+            <div class="footer-inner">
+              <a href="upute.html">Upute</a>
+              <a href="uvjeti.html">Uvjeti i odredbe</a>
+              <a href="kontakt.html">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="copyright">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="copyright-wrapper">
+        <div class="col-sm-12">
+          <div class="row justify-content-center">
+            <p class="text-center m-0">MojUred © 2019. | Made with love by
+              <a href="https://brokenbyte.agency/" target="_blank">BrokenByte</a> and Teo Soft 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131742743-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131742743-1');
+</script>
+<script src="assets/js/bootstrap/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap/popper.min.js"></script>
+<script src="assets/js/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="assets/js/cookie.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

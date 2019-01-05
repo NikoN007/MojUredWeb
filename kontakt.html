@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MojUred | Kontakt</title>
+
+  <meta property="og:title" content="MojUred">
+  <meta property="og:site_name" content="MojUred">
+  <meta property="og:description" content="MojUred je on-line aplikacija za izradu ponuda i računa. Idealna aplikacija za male i
+    srednje poduzetnike, obrtnike te udruge i neprofitne organizacije.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="hr">
+  <meta property="og:url" content="https://mojured.eu">
+  <meta property="og:image" content="https://mojured.eu/assets/images/og-maliured.jpg">
+  <meta name="description" content="MojUred je on-line aplikacija za izradu ponuda i računa. Idealna aplikacija za male i
+    srednje poduzetnike, obrtnike te udruge i neprofitne organizacije">
+  <meta name="keywords" content="mojured, ured, ponuda, račun, ponavljajući račun, otpremnica, putni nalog, uplatnica,
+    isplatnica, blagajnički izvještaj, fiskalizacija, online računo">
+  <meta name="author" content="BrokenByte obrt za informatičke usluge, info@brokenbyte.agency">
+  <!--<meta name="Publisher" content="https://plus.google.com/107075430277881701825">-->
+
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:700|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-select/bootstrap-select.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link 
+</head>
+<body data-title="kontakt">
+<section id="navigation">
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top navbar-main">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-wrapper">
+          <img id="logo-white" src="assets/images/logo-white.svg" alt="">
+          <img id="logo-dark" src="assets/images/logo-dark.svg" alt="">
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Početna<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="upute.html">Upute</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="kontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item" id="prijava">
+            <a class="nav-link btn btn-white text-primary" href="https://app.maliured.com"><h6 class="m-0">PRIJAVA</h6></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+<section id="kontakt-intro">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-lg-12 col-xl-6 mt-4 upute-kontakt-wrapper">
+        <h3 class="text-white mb-5">- KONTAKT</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="kontakt-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-7 form-wrapper p-4 mb-5 mb-md-0 mx-3 mx-md-0">
+        <h5 class="text-primary mb-5">KONTAKTIRAJTE NAS</h5>
+        <div class="form-outer">
+          <form autocomplete="off" id="send-message">
+            <div class="form-group row mb-1">
+              <label for="name" class="col-sm-4 col-form-label text-secondary">Vaše ime i prezime</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Vaše ime i prezime">
+                <div class="feedback-span" id="invalid-name">
+                  <p class="mb-1">Molimo unesite ime i prezime</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row mb-1">
+              <label for="email" class="col-sm-4 col-form-label text-secondary">Vaš e-mail</label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control" id="email" placeholder="Vaš e-mail">
+                <div class="feedback-span" id="invalid-email">
+                  <p class="mb-1">Molimo unesite ispravnu e-mail adresu</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row mb-1">
+              <label for="subject" class="col-sm-4 col-form-label text-secondary">Predmet</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="subject" placeholder="Predmet">
+                <div class="feedback-span" id="invalid-subject">
+                  <p class="mb-1">Molimo unesite predmet</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row mb-1">
+              <label for="message" class="col-sm-4 col-form-label text-secondary">Vaša poruka</label>
+              <div class="col-sm-8">
+                <textarea class="form-control" id="message" placeholder="Vaša poruka" rows="5"></textarea>
+                <div class="feedback-span" id="invalid-message">
+                  <p class="mb-1">Molimo unesite poruku</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group col-sm-8 offset-sm-4 mb-1 submit-wrapper">
+              <div class="submit-message">
+                <p class="mb-1"></p>
+              </div>
+              <button type="button" class="btn btn-primary submit-button"><h3>POŠALJI</h3></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 offset-md-1 info-wrapper p-4">
+        <div class="info-outer">
+          <p><i class="fa fa-phone-square" aria-hidden="true"></i><a href="tel:=385994449949">&nbsp;+385 99 444 99 49</a>
+          </p>
+          <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@mojured.eu">&nbsp;info@mojured.eu</a></p>
+          <p>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <a href="https://www.facebook.com/MaliUred/" target="_blank"> Facebook</a>
+          </p>
+        </div>
+        <hr class="ml-0 my-4 mx-auto mx-md-0">
+        <div class="info-outer">
+          <p><span>Sjedište:</span> Osijek,Ulica Svetog Roka 41</p>
+          <p><span>Sud:</span> Trgovački sud u Osijeku</p>
+          <p><span>MBS:</span> 030120979</p>
+          <p><span>OIB:</span> 46307988000</p>
+          <p><span>Bank SWIFT:</span> ZABAHR2X</p>
+          <p><span>Broj žiro računa:</span> HR0823600001102275440</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-wrapper px-3">
+        <div class="footer-top">
+          <div class="col-sm-12 col-md-3 mb-4 mb-sm-0">
+            <div class="footer-inner">
+              <img class="img-fluid mb-4" src="assets/images/logo-red.svg" alt="">
+              <p><i class="fa fa-phone-square" aria-hidden="true"></i><a href="tel:=385994448488"> +385 99 444 99 49</a></p>
+              <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@mojured.eu"> info@mojured.eu</a></p>
+              <p>
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/MaliUred/" target="_blank"> Facebook</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 mb-4 mb-sm-0">
+            <div class="footer-inner">
+              <p><span>Sjedište:</span> Osijek, Ulica Svetog Roka 41</p>
+              <p><span>Sud:</span> Trgovački sud u Osijeku</p>
+              <p><span>MBS:</span> 030120979</p>
+              <p><span>OIB:</span> 46307988000</p>
+              <p><span>Bank SWIFT:</span> ZABAHR2X</p>
+              <p><span>Broj žiro računa:</span> HR0823600001102275440</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 mb-4 mb-sm-0">
+            <div class="footer-inner">
+              <a href="upute.html">Upute</a>
+              <a href="uvjeti.html">Uvjeti i odredbe</a>
+              <a href="kontakt.html">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="copyright">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="copyright-wrapper">
+        <div class="col-sm-12">
+          <div class="row justify-content-center">
+            <p class="text-center m-0">MojUred © 2019. | Made with love by
+              <a href="https://brokenbyte.agency/" target="_blank">BrokenByte</a> and Teo Soft 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131742743-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131742743-1');
+</script>
+<script src="assets/js/bootstrap/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap/popper.min.js"></script>
+<script src="assets/js/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="assets/js/cookie.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
